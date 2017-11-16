@@ -1,5 +1,4 @@
 import React from 'react';
-import { PropTypes } from 'react';
 import { View, Platform } from 'react-native';
 import {
   Surface,
@@ -85,18 +84,6 @@ export default class CircularProgress extends React.Component {
     );
   }
 }
-
-CircularProgress.propTypes = {
-  style: View.propTypes.style,
-  size: PropTypes.number.isRequired,
-  fill: PropTypes.number.isRequired,
-  width: PropTypes.number.isRequired,
-  tintColor: PropTypes.string,
-  backgroundColor: PropTypes.string,
-  rotation: PropTypes.number,
-  linecap: PropTypes.string,
-  children: PropTypes.func,
-};
 
 CircularProgress.defaultProps = {
   tintColor: 'black',
